@@ -1,0 +1,120 @@
+"use client";
+
+import Image from "next/image";
+
+export default function AboutUs() {
+  return (
+    <section className="w-full py-16 md:py-24 relative overflow-hidden">
+      {/* Background image */}
+      <div className="absolute inset-0">
+        <Image
+          src="/assets/about-us-section.png"
+          alt=""
+          fill
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-[#1a2e1a]/40" />
+      </div>
+
+      <div className="relative z-10 w-full px-6 md:px-16 lg:px-24">
+        {/* Row 1: Manhal photo (left) + heading & paragraphs (right) */}
+        <div className="grid grid-cols-1 md:grid-cols-[1fr_1fr] gap-8 md:gap-16 items-start">
+          {/* Left — Manhal photo */}
+          <div className="flex flex-col items-center">
+            <div className="relative w-full max-w-sm md:max-w-md aspect-[3/4]">
+              <div className="absolute inset-0 border-[10px] border-[#c5a55a] shadow-xl overflow-hidden">
+                <div className="absolute inset-3 border-2 border-[#c9a84c]/60" />
+                <Image
+                  src="/assets/gb-manhal-image.png"
+                  alt="Manhal Betto - Founder"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            </div>
+            <div className="text-center text-[#c9a84c] font-serif italic text-lg mt-4">
+              Manhal Betto
+            </div>
+          </div>
+
+          {/* Right — heading + intro paragraphs */}
+          <div className="flex flex-col gap-6">
+            <h2 className="serif-heading text-5xl md:text-7xl lg:text-8xl leading-tight text-right">
+              About Us
+            </h2>
+
+            <p className="text-[#e5e5e5] leading-relaxed text-base md:text-lg">
+              Goodfellas Barber was founded in 2011 by Manhal Betto; a passionate
+              young barber who wanted to transform men&apos;s haircuts and grooming
+              for the better.
+            </p>
+
+            <p className="text-[#e5e5e5] leading-relaxed text-base md:text-lg">
+              Manhal Betto believes in the art of barbering and offers only the
+              finest products and services for gentlemen. In addition to its 13
+              magnificent locations throughout Sydney, Manhal has established a new
+              industry standard within the barbering community, making Goodfellas
+              Barber the barbershop of choice.
+            </p>
+          </div>
+        </div>
+
+        {/* Full-width quote */}
+        <div className="border-l-4 border-[#c5a55a] pl-6 md:pl-8 py-4 my-12 md:my-16">
+          <p className="text-[#c9a84c] italic font-serif text-xl md:text-2xl lg:text-3xl leading-relaxed">
+            &ldquo;The goal of our company is to remain the leader in the
+            industry when it comes to men&apos;s haircuts, styling, and
+            grooming&rdquo;
+            <span className="text-[#a0a0a0] not-italic text-base md:text-lg ml-2">
+              — Manhal Betto
+            </span>
+          </p>
+        </div>
+
+        {/* Row 2: Shop photo (left) + remaining text (right) */}
+        <div className="grid grid-cols-1 md:grid-cols-[1fr_1fr] gap-8 md:gap-16 items-start">
+          {/* Left — shop interior photo */}
+          <div className="flex justify-center md:justify-end">
+            <div className="relative w-full max-w-sm md:max-w-md aspect-[4/3]">
+              <div className="absolute inset-0 border-[10px] border-[#c5a55a] shadow-xl overflow-hidden">
+                <div className="absolute inset-3 border-2 border-[#c9a84c]/60" />
+                <Image
+                  src="/assets/gb-aboutus-teamimage-1.png"
+                  alt="Goodfellas Barber Interior"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* Right — remaining paragraphs in gold */}
+          <div className="flex flex-col gap-6">
+            <p className="text-[#c9a84c] leading-relaxed text-base md:text-lg">
+              Goodfellas Barber offers classic, old-school haircutting and grooming
+              techniques blended with modern styles and trends in a comfortable,
+              welcoming environment. Here, you&apos;ll be greeted by name and well
+              taken care of.
+            </p>
+
+            <p className="text-[#c9a84c] leading-relaxed text-base md:text-lg">
+              From the moment you sit down in one of our barber chairs, you can
+              rest easy knowing you&apos;ll receive your entire service in one
+              place.
+            </p>
+
+            <p className="text-[#c9a84c] leading-relaxed text-base md:text-lg">
+              Goodfellas Barber offers a full-range of men&apos;s grooming services
+              from signature haircuts to straight razor shaves to colour services.
+            </p>
+
+            <p className="text-[#c9a84c] leading-relaxed text-base md:text-lg">
+              Treat yourself to something better. Come in and experience the
+              difference of superior barbering and grooming at Goodfellas Barber.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@400;500;600;700&display=swap");
+
+@import "tailwindcss";
+
+:root {
+  --color-primary-dark: #1a2e1a;
+  --color-dark-bg: #0d0d0d;
+  --color-card-bg: #2a3f2a;
+  --color-gold: #c5a55a;
+  --color-gold-text: #c9a84c;
+  --color-text-light: #e5e5e5;
+  --color-text-muted: #a0a0a0;
+  --color-border-subtle: #3a4a3a;
+
+  /* Smooth scroll behavior */
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: var(--color-dark-bg);
+  color: var(--color-text-light);
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+}
+
+.serif-heading {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  color: var(--color-gold-text);
+  letter-spacing: -0.02em;
+}
+
+.sans-serif-body {
+  font-family: "Inter", sans-serif;
+  color: var(--color-text-light);
+}
+
+.text-muted {
+  color: var(--color-text-muted);
+}
+
+.border-gold {
+  border-color: var(--color-gold);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-dark-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-gold);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gold-text);
+}
+
+/* Smooth transitions for interactive elements */
+a,
+button {
+  transition: all 0.3s ease;
+}
+
+/* Link styles */
+a {
+  color: var(--color-gold);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-gold-text);
+}
+
+/* Button base styles */
+button {
+  cursor: pointer;
+}
+
+/* Responsive text sizes */
+@media (max-width: 768px) {
+  html,
+  body {
+    font-size: 14px;
+  }
+}
