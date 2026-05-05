@@ -17,19 +17,6 @@ export interface Location {
 
 export const locations: Location[] = [
   {
-    id: "winston-hills",
-    name: "Winston Hills",
-    suburb: "Winston Hills Mall",
-    comingSoon: false,
-    hours: [
-      { dayRange: "Mon-Wed", time: "8:30AM-5:45PM" },
-      { dayRange: "Thurs", time: "8:30AM-8:30PM" },
-      { dayRange: "Fri", time: "8:30AM-5:45PM" },
-      { dayRange: "Sat", time: "8AM-5:30PM" },
-      { dayRange: "Sun", time: "8:30AM-5PM" },
-    ],
-  },
-  {
     id: "melrose-park",
     name: "Melrose Park",
     suburb: "Melrose Park",
@@ -42,6 +29,19 @@ export const locations: Location[] = [
     suburb: "Meadowbank",
     comingSoon: true,
     hours: [],
+  },
+  {
+    id: "winston-hills",
+    name: "Winston Hills",
+    suburb: "Winston Hills Mall",
+    comingSoon: false,
+    hours: [
+      { dayRange: "Mon-Wed", time: "8:30AM-5:45PM" },
+      { dayRange: "Thurs", time: "8:30AM-8:30PM" },
+      { dayRange: "Fri", time: "8:30AM-5:45PM" },
+      { dayRange: "Sat", time: "8AM-5:30PM" },
+      { dayRange: "Sun", time: "8:30AM-5PM" },
+    ],
   },
   {
     id: "westfield-miranda",
