@@ -30,6 +30,13 @@ export const locations: Location[] = [
     ],
   },
   {
+    id: "melrose-park",
+    name: "Melrose Park",
+    suburb: "Melrose Park",
+    comingSoon: true,
+    hours: [],
+  },
+  {
     id: "meadowbank",
     name: "Meadowbank",
     suburb: "Meadowbank",
