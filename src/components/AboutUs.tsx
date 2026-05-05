@@ -91,26 +91,27 @@ export default function AboutUs() {
           {/* Right — remaining paragraphs in gold */}
           <div className="flex flex-col gap-6">
             <p className="text-[#c9a84c] leading-relaxed text-base md:text-lg">
-              Goodfellas Barber offers classic, old-school haircutting and grooming
-              techniques blended with modern styles and trends in a comfortable,
-              welcoming environment. Here, you&apos;ll be greeted by name and well
-              taken care of.
+              Goodfellas Barber combines classic, old-school barbering techniques
+              with modern style and contemporary trends, delivered in a refined and
+              welcoming environment. From the moment you arrive, you&apos;re
+              greeted by name and looked after with genuine care and attention.
             </p>
 
             <p className="text-[#c9a84c] leading-relaxed text-base md:text-lg">
-              From the moment you sit down in one of our barber chairs, you can
-              rest easy knowing you&apos;ll receive your entire service in one
-              place.
+              From the moment you take a seat in the chair, you can relax knowing
+              every aspect of your grooming experience is handled in one place,
+              with precision and consistency at the core.
             </p>
 
             <p className="text-[#c9a84c] leading-relaxed text-base md:text-lg">
-              Goodfellas Barber offers a full-range of men&apos;s grooming services
-              from signature haircuts to straight razor shaves to colour services.
+              We offer a complete range of men&apos;s grooming services, from
+              signature haircuts and straight razor shaves to professional colour
+              services, all delivered to the highest standard.
             </p>
 
             <p className="text-[#c9a84c] leading-relaxed text-base md:text-lg">
-              Treat yourself to something better. Come in and experience the
-              difference of superior barbering and grooming at Goodfellas Barber.
+              Step into something better. Experience the difference of considered,
+              superior barbering and grooming at Goodfellas Barber.
             </p>
           </div>
         </div>
