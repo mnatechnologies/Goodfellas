@@ -19,11 +19,11 @@ export default function Footer() {
               className="inline-block hover:opacity-80 transition-opacity"
             >
               <Image
-                src="/assets/gb-logo-secondary.png"
+                src="/assets/primary-logo.png"
                 alt="Goodfellas Barber"
-                width={120}
-                height={80}
-                className="w-28 h-auto"
+                width={160}
+                height={220}
+                className="w-32 h-auto"
               />
             </button>
           </div>

@@ -3,8 +3,12 @@
 import { useState, useEffect } from "react";
 import { Facebook, Instagram } from "lucide-react";
 import Image from "next/image";
+import { locations } from "@/data/locations";
 
 export default function Hero() {
+  const openLocationsCount = locations.filter((l) => !l.comingSoon).length;
+  const comingSoonCount = locations.filter((l) => l.comingSoon).length;
+
   const [animationPhase, setAnimationPhase] = useState<
     "overlay" | "fade-logo" | "split" | "done"
   >("overlay");
@@ -163,7 +167,7 @@ export default function Hero() {
       <div className="absolute bottom-4 md:bottom-8 left-1/2 -translate-x-1/2 w-full max-w-3xl px-4">
         <div className="grid grid-cols-4 text-center">
           <div className="text-center py-3 md:py-4">
-            <div className="text-3xl md:text-4xl font-bold font-serif text-white">2</div>
+            <div className="text-3xl md:text-4xl font-bold font-serif text-white">{comingSoonCount}</div>
             <div className="text-xs md:text-sm text-white/70 font-light mt-1 leading-tight">
               Shops<br />Coming Soon
             </div>
@@ -185,7 +189,7 @@ export default function Hero() {
             </div>
           </div>
           <div className="text-center py-3 md:py-4">
-            <div className="text-3xl md:text-4xl font-bold font-serif text-white">15</div>
+            <div className="text-3xl md:text-4xl font-bold font-serif text-white">{openLocationsCount}</div>
             <div className="text-xs md:text-sm text-white/70 font-light mt-1 leading-tight">
               Open<br />Locations
             </div>
