@@ -16,15 +16,21 @@ export default function Footer() {
           <div className="text-center md:text-left">
             <button
               onClick={scrollToTop}
-              className="inline-block hover:opacity-80 transition-opacity"
+              className="inline-flex flex-col items-center md:items-start hover:opacity-80 transition-opacity"
             >
               <Image
                 src="/assets/gb-logo-secondary.png"
                 alt="Goodfellas Barber"
                 width={120}
                 height={80}
-                className="w-28 h-auto"
+                className="w-20 h-auto"
               />
+              <div className="mt-2 text-base font-serif tracking-[0.3em] text-[#c9a84c]">
+                GOODFELLAS
+              </div>
+              <div className="text-xs font-serif tracking-[0.4em] text-[#c9a84c]">
+                BARBER
+              </div>
             </button>
           </div>
 
