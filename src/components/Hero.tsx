@@ -3,8 +3,11 @@
 import { useState, useEffect } from "react";
 import { Facebook, Instagram } from "lucide-react";
 import Image from "next/image";
+import { locations } from "@/data/locations";
 
 export default function Hero() {
+  const openLocationsCount = locations.filter((l) => !l.comingSoon).length;
+
   const [animationPhase, setAnimationPhase] = useState<
     "overlay" | "fade-logo" | "split" | "done"
   >("overlay");
@@ -97,11 +100,11 @@ export default function Hero() {
             }}
           >
             <Image
-              src="/assets/gb-logo-secondary.png"
-              alt="GB"
-              width={200}
-              height={132}
-              className="w-28 md:w-44"
+              src="/assets/bg-logo-ai-file.ai-ai.png"
+              alt="Goodfellas Barber"
+              width={300}
+              height={300}
+              className="w-32 md:w-52"
               priority
             />
           </div>
@@ -110,22 +113,14 @@ export default function Hero() {
 
       {/* Logo — pinned to top center */}
       <div className="absolute top-[4vh] md:top-[5vh] z-10 flex flex-col items-center text-center">
-        <div className="mb-2 md:mb-3">
-          <Image
-            src="/assets/gb-logo-secondary.png"
-            alt="GB"
-            width={300}
-            height={200}
-            className="w-28 md:w-40 h-auto"
-            priority
-          />
-        </div>
-        <div className="text-xl md:text-2xl font-serif tracking-[0.3em] text-[#c9a84c]">
-          GOODFELLAS
-        </div>
-        <div className="text-base md:text-xl font-serif tracking-[0.4em] text-[#c9a84c]">
-          BARBER
-        </div>
+        <Image
+          src="/assets/bg-logo-ai-file.ai-ai.png"
+          alt="Goodfellas Barber"
+          width={400}
+          height={400}
+          className="w-40 md:w-56 h-auto"
+          priority
+        />
       </div>
 
       {/* CTA + Social — vertically centered */}
@@ -185,7 +180,7 @@ export default function Hero() {
             </div>
           </div>
           <div className="text-center py-3 md:py-4">
-            <div className="text-3xl md:text-4xl font-bold font-serif text-white">15</div>
+            <div className="text-3xl md:text-4xl font-bold font-serif text-white">{openLocationsCount}</div>
             <div className="text-xs md:text-sm text-white/70 font-light mt-1 leading-tight">
               Open<br />Locations
             </div>
