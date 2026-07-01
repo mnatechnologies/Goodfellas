@@ -1,8 +1,11 @@
 "use client";
 
 import Image from "next/image";
+import { locations } from "@/data/locations";
 
 export default function AboutUs() {
+  const openLocationsCount = locations.filter((l) => !l.comingSoon).length;
+
   return (
     <section className="w-full py-16 md:py-24 relative overflow-hidden">
       {/* Background image */}
@@ -44,15 +47,16 @@ export default function AboutUs() {
             </h2>
 
             <p className="text-[#e5e5e5] leading-relaxed text-base md:text-lg">
-              Goodfellas Barber was founded in 2011 by Manhal Betto; a passionate
-              young barber who wanted to transform men&apos;s haircuts and grooming
-              for the better.
+              Founded in 2011 by Manhal Betto, Goodfellas Barber was built on a
+              clear vision to elevate the standard of men&apos;s grooming through
+              precision, consistency, and uncompromising attention to detail.
             </p>
 
             <p className="text-[#e5e5e5] leading-relaxed text-base md:text-lg">
               Manhal Betto believes in the art of barbering and offers only the
-              finest products and services for gentlemen. In addition to its 13
-              magnificent locations throughout Sydney, Manhal has established a new
+              finest products and services for gentlemen. In addition to its{" "}
+              {openLocationsCount} magnificent locations throughout Sydney, Manhal
+              has established a new
               industry standard within the barbering community, making Goodfellas
               Barber the barbershop of choice.
             </p>
@@ -62,9 +66,9 @@ export default function AboutUs() {
         {/* Full-width quote */}
         <div className="border-l-4 border-[#c5a55a] pl-6 md:pl-8 py-4 my-12 md:my-16">
           <p className="text-[#c9a84c] italic font-serif text-xl md:text-2xl lg:text-3xl leading-relaxed">
-            &ldquo;The goal of our company is to remain the leader in the
-            industry when it comes to men&apos;s haircuts, styling, and
-            grooming&rdquo;
+            &ldquo;We strive to set the standard in men&apos;s grooming,
+            combining precision, artistry, and refinement to deliver an
+            experience defined by modern luxury&rdquo;
             <span className="text-[#a0a0a0] not-italic text-base md:text-lg ml-2">
               — Manhal Betto
             </span>

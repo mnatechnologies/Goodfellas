@@ -253,4 +253,17 @@ export const locations: Location[] = [
       { dayRange: "Sun", time: "8:30AM-5PM" },
     ],
   },
+  {
+    id: "greenway-wetherill-park",
+    name: "Wetherill Park",
+    suburb: "Greenway Wetherill Park",
+    comingSoon: false,
+    hours: [
+      { dayRange: "Mon-Wed", time: "8:30AM-6PM" },
+      { dayRange: "Thurs", time: "8:30AM-8:30PM" },
+      { dayRange: "Fri", time: "8:30AM-6PM" },
+      { dayRange: "Sat", time: "8:30AM-6PM" },
+      { dayRange: "Sun", time: "9AM-5PM" },
+    ],
+  },
 ];
