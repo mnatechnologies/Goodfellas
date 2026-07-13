@@ -53,12 +53,13 @@ export default function AboutUs() {
             </p>
 
             <p className="text-[#e5e5e5] leading-relaxed text-base md:text-lg">
-              Manhal Betto believes in the art of barbering and offers only the
-              finest products and services for gentlemen. In addition to its{" "}
-              {openLocationsCount} magnificent locations throughout Sydney, Manhal
-              has established a new
-              industry standard within the barbering community, making Goodfellas
-              Barber the barbershop of choice.
+              What began as a passion for barbering has grown into one of Sydney’s most recognised barbershop brands.
+              With a strong focus on craftsmanship and client experience, Manhal has established a reputation for delivering premium services tailored to the modern gentleman.
+            </p>
+
+            <p className="text-[#e5e5e5] leading-relaxed text-base md:text-lg">
+
+              Today, with {openLocationsCount} locations across Sydney and two more opening soon, Goodfellas Barber continues to set the benchmark within the industry. Every aspect of the brand, from the expertise of its barbers to the quality of its products, reflects a commitment to excellence, professionalism, and timeless style.
             </p>
           </div>
         </div>
